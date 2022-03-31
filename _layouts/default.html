@@ -30,6 +30,10 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
+
+    {% if site.google_analytics %}
+    {% include analytics.html %}
+    {% endif %}
   </head>
   <body>
       <div id="header">
