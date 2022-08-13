@@ -2,23 +2,26 @@
 
 <br/>
 <div align="center">
-<a href="https://awesomealgo.com" target="_blank"> <img width="100%" src="https://i.imgur.com/Z6kSoCr.png"> </a>
+<img width="100%" src="https://i.imgur.com/EMRYFqZ.png">
 </div>
 <br/>
 <div align="center">
 ⚡ A curated list of awesome resources related to the <a href='https://www.algorand.com/'>Algorand</a> Blockchain.
 <br />
+<br />
 Algorand is an open-source, proof of stake blockchain and smart contract computing platform.
-<br/>
-<a><img src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=green" /></a>
-<a href="https://awesomealgo.com"><img src="https://img.shields.io/badge/Web 2.0-Website-yellow.svg" /></a>
-<a href="https://ipfs.io/ipfs/QmS6dTFMddKkNnPmixhXRLLCfhURYnnnWJupz5tRPbJg81" style="pointer-events: none;  cursor: default;"><img src="https://img.shields.io/badge/Web 3.0-Website-blue.svg"/></a>
-<a href="https://anchor.fm/awesomealgo"><img src="https://img.shields.io/badge/AwesomeAlgo-Podcast-purple.svg" /></a>
-<br/>
-<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?style=social" /></a>
-<a href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?style=social" /></a>
 </div>
-<br/>
+
+
+<p align="center" width="100%">
+    <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=green" />
+    <img  href="https://awesomealgo.com" src="https://img.shields.io/badge/Web2.0-Website-yellow.svg" />
+    <img  href="https://ipfs.io/ipfs/QmS6dTFMddKkNnPmixhXRLLCfhURYnnnWJupz5tRPbJg81" src="https://img.shields.io/badge/Web3.0-Website-blue.svg" />
+    <img  href="https://anchor.fm/awesomealgo" src="https://img.shields.io/badge/AwesomeAlgo-Podcast-purple.svg" />
+    <img  href="https://github.com/aorumbayev/awesome-algorand" src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?style=social" />
+    <img  href="https://github.com/aorumbayev/awesome-algorand/network/members" src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?style=social" />
+</p>
+
 
 ## Contents
 
