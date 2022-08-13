@@ -1,5 +1,3 @@
-# Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-
 <br/>
 <div align="center">
 <img width="100%" src="https://i.imgur.com/EMRYFqZ.png">
@@ -14,12 +12,11 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 
 <p align="center" width="100%">
-    <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=green" />
-    <img  href="https://awesomealgo.com" src="https://img.shields.io/badge/Web2.0-Website-yellow.svg" />
-    <img  href="https://ipfs.io/ipfs/QmS6dTFMddKkNnPmixhXRLLCfhURYnnnWJupz5tRPbJg81" src="https://img.shields.io/badge/Web3.0-Website-blue.svg" />
-    <img  href="https://anchor.fm/awesomealgo" src="https://img.shields.io/badge/AwesomeAlgo-Podcast-purple.svg" />
-    <img  href="https://github.com/aorumbayev/awesome-algorand" src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?style=social" />
-    <img  href="https://github.com/aorumbayev/awesome-algorand/network/members" src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?style=social" />
+    <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=black" />
+    <img  href="https://awesomealgo.com" src="https://img.shields.io/badge/Web2.0-Website-black.svg" />
+    <a href="https://anchor.fm/awesomealgo"><img src="https://img.shields.io/badge/AwesomeAlgo-Podcast-black.svg" /></a>
+    <a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?color=black" /></a>
+    <a  href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?color=black" /></a>
 </p>
 
 
@@ -310,13 +307,3 @@ License
 To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand.`
 
 For the full license, see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
-
-Credits
-
-This awesome list is inspired by:
-
-- https://github.com/ghostbits/awesome-algorand
-
-- https://github.com/ttumiel/Awesome-Ethereum
-
-- https://github.com/igorbarinov/awesome-bitcoin
