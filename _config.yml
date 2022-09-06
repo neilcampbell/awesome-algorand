@@ -7,8 +7,13 @@ title: Awesome Algorand
 tagline: Curated resources from Algorand Blockchain ecosystem
 description: ⚡ An awesome list about everything related to the Algorand Blockchain ⛓
 google_analytics: G-HS5HNLQJRH
-image: https://i.imgur.com/3cdA9km.jpg
+image: /markdown/twitter_card.png
 
 twitter:
   username: millionalgos
   card: summary
+
+social:
+  name: AwesomeAlgo
+  links:
+    - https://twitter.com/awesome_algo
