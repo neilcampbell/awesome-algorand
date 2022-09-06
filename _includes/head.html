@@ -1,0 +1,31 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>
+      {%- if page.title -%}
+        {{ page.title }}
+      {%- else -%}
+        {{ site.title }}
+      {%- endif -%}
+    </title>
+  
+    {%-seo title=false-%}
+    {%-feed_meta-%}
+
+    <meta name="twitter:title" content="AwesomeAlgo">
+    <meta name="twitter:description" content="⚡ An awesome list about everything related to the Algorand Blockchain ⛓">
+    <meta name="twitter:image" content="https://i.imgur.com/3cdA9km.jpg">
+    <meta name="title" content="AwesomeAlgo">
+    
+    <meta name="keywords" content="algorand, algoworld, nft, defi, blockchain, pos, smart contracts, state proofs">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+        
+  
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+  </head>
