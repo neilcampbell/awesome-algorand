@@ -9,6 +9,7 @@
     <a target="_blank" href="https://open.spotify.com/show/3DHOvmzDeYJcoOA2U2r3iw"><img  style="width:150px" src="/markdown/spotify_badge.png" /></a>
     <a target="_blank" href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzI5NzU5MGExLTNhZWQtNGQyMC1hODhhLWM4NWE3YWE3NWZhNg"><img  style="width:150px" src="/markdown/google_badge.png" /></a>
     <a target="_blank" href="https://podcasts.apple.com/us/podcast/the-awesomealgo-podcast/id1631910697"><img  style="width:150px" src="/markdown/apple_badge.png" /></a>
+    <a target="_blank" href="https://media.rss.com/the-awesomealgo-podcast/feed.xml"><img  style="width:150px" src="/markdown/rss_badge.png" /></a>
 </p>
 
 ---
