@@ -1,20 +1,19 @@
-<br/>
+# AwesomeAlgo Podcast
+
 <div align="center">
-<a href="https://rss.com/podcasts/the-awesomealgo-podcast"><img src="https://i.imgur.com/WaTLWhk.png"></a>
+<a href="https://rss.com/podcasts/the-awesomealgo-podcast"><img src="https://ipfs.algonode.xyz/ipfs/bafkreigdmn477o623qszymput7lv3c53g3tdqbfiwzmgiuj7qyftm47uwy"></a>
 </div>
 <br/>
-<br />
-
-
-The AwesomeAlgo Podcast is a monthly podcast where we discuss the latest news and developments in the Algorand ecosystem. Anyone, upon review, can be a guest of the show by contributing a PR to the [repository](https://github.com/aorumbayev/awesome-algorand) and filling the [guest form](https://2c5n1ed3kz6.typeform.com/to/pAP5oPFx).
-
----
 
 <p id="icon-row" >
     <a target="_blank" href="https://open.spotify.com/show/3DHOvmzDeYJcoOA2U2r3iw"><img  style="width:150px" src="/markdown/spotify_badge.png" /></a>
     <a target="_blank" href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzI5NzU5MGExLTNhZWQtNGQyMC1hODhhLWM4NWE3YWE3NWZhNg"><img  style="width:150px" src="/markdown/google_badge.png" /></a>
-    <a target="_blank" href="https://podcasts.apple.com/us/podcast/the-awesomealgo-podcast/id1631910697"><img  style="width:150px" src="/markdown/apple_badge.svg" /></a>
+    <a target="_blank" href="https://podcasts.apple.com/us/podcast/the-awesomealgo-podcast/id1631910697"><img  style="width:150px" src="/markdown/apple_badge.png" /></a>
 </p>
+
+---
+
+The AwesomeAlgo Podcast is a monthly podcast where we discuss the latest news and developments in the Algorand ecosystem. Anyone, upon review, can be a guest of the show by contributing a PR to the [repository](https://github.com/aorumbayev/awesome-algorand) and filling the [guest form](https://2c5n1ed3kz6.typeform.com/to/pAP5oPFx).
 
 ---
 
