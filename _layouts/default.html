@@ -2,10 +2,17 @@
 <html lang="{{ page.lang | default: "en" }}">
   {% seo %}
   {%- include head.html -%}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% include analytics.html %}
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <main class="page-content" aria-label="Content">
+
       <div class="w ioda">
+        <div class="title">
+          <a href="/">Resources</a>
+          <a href="/podcasts">Podcast</a>
+        </div>
+
         {{ content }}
       </div>
     </main>

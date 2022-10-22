@@ -6,9 +6,9 @@ plugins:
 title: Awesome Algorand
 tagline: Curated resources from Algorand Blockchain ecosystem
 description: ⚡ An awesome list about everything related to the Algorand Blockchain ⛓
-google_analytics: G-HS5HNLQJRH
 logo: /markdown/twitter_card.png
 image: /markdown/twitter_card.png
+favicon: "favicon.png"
 
 twitter:
   username: millionalgos

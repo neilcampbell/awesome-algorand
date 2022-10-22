@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
+iframe {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 *:target { background: #009860; }
 
 code {
@@ -12,4 +17,9 @@ code {
 
 a {
     color: #0e0573;
+}
+
+#icon-row {
+  display: flex;
+  justify-content: center;
 }
