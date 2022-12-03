@@ -1,18 +1,13 @@
 remote_theme: riggraz/no-style-please@v0.3.1
 plugins:
   - jekyll-remote-theme
-  - jekyll-seo-tag
 
 title: Awesome Algorand
 tagline: Curated resources from Algorand Blockchain ecosystem
 description: ⚡ An awesome list about everything related to the Algorand Blockchain ⛓
-logo: /markdown/twitter_card.png
-image: /markdown/twitter_card.png
+logo: "markdown/twitter_card.png"
+image: "markdown/twitter_card.png"
 favicon: "favicon.png"
-
-twitter:
-  username: millionalgos
-  card: summary
 
 social:
   name: AwesomeAlgo
