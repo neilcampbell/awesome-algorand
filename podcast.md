@@ -24,11 +24,12 @@ The AwesomeAlgo Podcast is a monthly podcast where we discuss the latest news an
 
 ## Latest episode
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5KA5TCPVDUX0UtxLIuBfbV?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5qbUOsADYuGY5MY48XBxzN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ## All episodes
 
 <div class="episodes__podcasts">
+    <iframe src="https://open.spotify.com/embed/episode/5qbUOsADYuGY5MY48XBxzN?utm_source=generator&theme=0" width="100% " height="232 " frameBorder="0 " allowtransparency="true " allow="encrypted-media" loading="lazy"></iframe>
     <iframe src="https://open.spotify.com/embed/episode/5KA5TCPVDUX0UtxLIuBfbV?utm_source=generator&theme=0" width="100% " height="232 " frameBorder="0 " allowtransparency="true " allow="encrypted-media" loading="lazy"></iframe>
     <iframe src="https://open.spotify.com/embed/episode/4xn0tJ1nZ9u0EZcUODM8Ar?utm_source=generator&theme=0" width="100% " height="232 " frameBorder="0 " allowtransparency="true " allow="encrypted-media" loading="lazy"></iframe>
     <iframe src="https://open.spotify.com/embed/episode/28Lns5WbVwqBKneW6Szkr8?utm_source=generator&theme=0" width="100% " height="232 " frameBorder="0 " allowtransparency="true " allow="encrypted-media" loading="lazy"></iframe>
@@ -42,4 +43,3 @@ The AwesomeAlgo Podcast is a monthly podcast where we discuss the latest news an
     <iframe src="https://open.spotify.com/embed/episode/4WQkGHqZvrKjfaz8AqELoU?utm_source=generator&theme=0" width="100% " height="232 " frameBorder="0 " allowtransparency="true " allow="encrypted-media" loading="lazy"></iframe>
     <iframe src="https://open.spotify.com/embed/episode/4vHDhyVu2KODZsTuCOT6eW?utm_source=generator&theme=0" width="100% " height="232 " frameBorder="0 " allow="encrypted-media" loading="lazy"></iframe>
 </div>
-
