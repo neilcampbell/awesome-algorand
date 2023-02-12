@@ -35,7 +35,7 @@ jobs:
                 user_name: 'AwesomeAlgoBot'
                 commit_message: '🤖 Updating website with latest content 📜'
 
-            - uses: 8BitJonny/gh-get-current-pr@v2.1.3
+            - uses: 8BitJonny/gh-get-current-pr@v2.2.0
               if: ${{ !startsWith(github.event.head_commit.message, '[no-tweet]') }}
               id: PR
 
@@ -44,7 +44,7 @@ jobs:
               with:
                 # GitHub event payload
                 # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-                tweet-message: "⭐️ Check out ${{ steps.PR.outputs.pr_title }}. Head to awesomealgo.com to explore #awesome tools and platforms in #algorand ecosystem. ⚡️"
+                tweet-message: "⭐️ Check out new submission at ${{ steps.PR.outputs.pr_url }}. Explore #awesome tools and platforms in #algorand ecosystem. If you like it, please consider starring the repo to support the project ⚡️"
               env:
                 # Get your tokens from https://developer.twitter.com/apps
                 TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
