@@ -28,21 +28,23 @@ pnpm add @thencc/algonautjs
 pnpm add @thencc/algonautjs@beta
 ```
 
-Usage:
+Basic usage:
 
 ```js
 // 1. import lib
 import { Algonaut } from '@thencc/algonautjs';
 
 // 2. create lib instance
-const algonaut = new Algonaut(); // uses default algo node config + enabled wallets config
+const algonaut = new Algonaut(); // uses algonaut testnet by default
 
-// 3. authenticate (defaults to inkey microwallet)
-const accounts = await algonaut.connect(); // throw err if user did not connect a wallet
+// 3. authenticate (ex: using inkey microwallet)
+const accounts = await algonaut.connect({
+  inkey: true
+});
 
 // 4. contruct a txn + submit it to the network (uses suggested network params)
 const txnStatus = await algonaut.sendAlgo({
-  to: 'toAddress',
+  to: 'DXS4S2WZMFAFA2WDSIRNCZGVSQQ72XEKVED63NA7KWVLKWBWZ6AABQYMTY',
   amount: 1000, // micro algos
   optionalFields: { note: 'a note for the transaction' }
 });
@@ -50,88 +52,82 @@ console.log(txnStatus);
 ```
 
 
-## Authenticating
+## Authenticating / Connecting a Wallet
 
-Authenticating can be broken into 3 parts:
-1. enabling the wallet(s) supported by the dapp
-    - responsibility: developer
-    - defaults to `inkey` only
-2. connecting an account
-    - responsibility: user
-    - prompts user to sign-in via active wallet ui
-    - remembers last active account + wallet after page reload (LocalStorage)
-3. re-authenticating (if signing/submitting a txn)
-    - responsibility: user
-    - algonaut remembers the last authenticated account after a page reload, but to perform any txn signing the active wallet will prompt the user for approval.
+algonaut supports most all Algorand wallets such as... 
+- ✅ Pera
+- ✅ Inkey
+- ✅ MyAlgo
+- ✅ AlgoSigner 
+- ✅ Exodus 
+- ✅ Defly
+- ✅ Mnemonic (not secure client-side)
 
-algonaut uses [`any-wallet`](https://github.com/thencc/any-wallet) under the hood to handle most all algorand wallets (see the `any-wallet` documentation for more info). by default [`inkey`](https://inkey.ncc.la/) is the only enabled wallet but developers can enable any number of wallets for their dapp (Pera, Inkey, MyAlgo, AlgoSigner, Exodus, Defly, Mnemonic).
+...by using [`any-wallet`](https://github.com/thencc/any-wallet) under the hood. 
+
+`any-wallet` uses localstorage to remember which wallet(s) a user has connected to the dapp previously and the entire `any-wallet` reactive state is made available at `algonaut.walletState` for convenience. see the [`any-wallet` documentation](https://github.com/thencc/any-wallet) for more info.
+
+<details>
+<summary><h3>🔌 ex: simple connect ↕</h3></summary>
+  
+At it's simplest, algonaut can connect a user's wallet by awaiting the `.connect()` method, which takes an object with exactly ONE entry where the `WALLET_ID` of the desired provider is the key and the value is `true`. this loads the wallet's sdk on demand and prompts the user to signin to it. for example:
+```ts
+// inkey microwallet
+let accts = await algonaut.connect({
+  inkey: true
+});
+
+// or, pera wallet
+let accts = await algonaut.connect({
+  pera: true
+});
+
+// now algonaut uses the first returned acct as the active account on the class instance
+algonaut.account == accts[0];
+```
+</details>
 
 
-### enable
-
-enable all supported wallets (see `any-wallet` repo for [full example](https://github.com/thencc/any-wallet/tree/main/example-dapp)):
+<details>
+<summary><h3>🧮 ex: complex connect ↕</h3></summary>
+  
 ```ts
 import { WALLET_ID } from '@thencc/algonautjs';
 
-// "walletInitParams" is passed to any-wallet's enableWallets function directly
-const algonaut = new Algonaut({
-  anyWalletConfig: {
-    walletInitParams: {
-      // pass value "true" for defaults, or wallet-specific config obj (see any-wallet docs)
-      [WALLET_ID.INKEY]: {
-        config: {
-          align: 'right',
-        }
-      },
-      [WALLET_ID.PERA]: true,
-      [WALLET_ID.MYALGO]: true,
-      [WALLET_ID.ALGOSIGNER]: true,
-      [WALLET_ID.EXODUS]: true,
-      [WALLET_ID.DEFLY]: true,
-      [WALLET_ID.MNEMONIC]: true // "true" default here means open a html prompt input when connect is called
-    }
-  }
-});
-```
+/** --- 1. ENABLE some wallets [dev] --- */
 
-
-enable only the mnemonic wallet for authentication (FYI enabling the mnemonic wallet ALSO connects it which is different from all other wallets which require an enable and then a connect as separate method calls.)
-> **note**: not super secure but can be useful for local development:
-```ts
 const algonaut = new Algonaut({
-  anyWalletConfig: {
-    walletInitParams: {
-      ['mnemonic']: {
-        config: {
-          mnemonic: '25 word phrase', // can import from
-        }
+  initWallets: {
+    [WALLET_ID.INKEY]: {
+      config: {
+        align: 'right', // use custom config or true for defaults
       }
-    }
+    },
+    [WALLET_ID.PERA]: true,
+    [WALLET_ID.MYALGO]: true,
+    [WALLET_ID.ALGOSIGNER]: true,
+    [WALLET_ID.EXODUS]: true,
+    [WALLET_ID.DEFLY]: true,
+    [WALLET_ID.MNEMONIC]: '25 word phrase',
   }
 });
-```
 
-### connecting
 
-if only 1 wallet type is enabled, you can simply call `.connect()`
-```ts
-const accts = await algonaut.connect(); // opens wallet ui + throws if user closes ui without authenticating
-```
 
-if mulitple wallets are enabled
-```ts
+/** --- 2. CONNECT a wallet [user] --- */
+
 // connect a specific wallet directly
-const accts = await algonaut.AnyWalletState.enabledWallets.pera.connect();
+const accts = await algonaut.walletState.enabledWallets.pera.connect();
 
 // or, iterate through enabledWallets in the ui and connect the one the user selected
-// for example, call connectWallet from a button click
 const connectWallet = async (walletId: string) => {
   try {
     if (
-      algonaut.AnyWalletState.enabledWallets &&
-      walletId in algonaut.AnyWalletState.enabledWallets
+      algonaut.walletState.enabledWallets &&
+      walletId in algonaut.walletState.enabledWallets
     ) {
-        let accts = await algonaut.AnyWalletState.enabledWallets[walletId].connect();
+        let accts = await algonaut.walletState.enabledWallets[walletId].connect();
+        return accts;
     } else {
       throw new Error('wallet not enabled:', walletId);
     }
@@ -139,17 +135,54 @@ const connectWallet = async (walletId: string) => {
     console.warn(e);
   }
 };
+
+// for example, on a button click do:
+let accts = await connectWallet('pera');
 ```
+</details>
 
-once the algonaut instance is authenticated it uses this chosen wallet as the default wallet for signing, and this account's address as the default `.from` address in txn constructions (unless a `.from` field is passed into the txn args).
 
+<details>
+<summary><h3>📝 ex: mnemonic wallet ↕</h3></summary>
 
-the algonaut instance is authenticated if the `algonaut.address` field is populated.
+> **note**: NOT SECURE for client-side use but can be useful for rapid local development.
+
 ```ts
-console.log(algonaut.address); // "ADWTH6AP6EVAS3PD4JZCYRG26ZLZLC5CSK5QIXD4OHPDKVZE5AEDOIKBBU"
-```
+// enable + connect on instantiation 
+const algonaut = new Algonaut({
+  initWallets: {
+    mnemonic: '25 word phrase'
+  }
+});
 
-You can also subscribe to auth changes like so:
+// or, connect later on
+const algonaut = new Algonaut();
+...
+let accts = await algonaut.connect({
+  mnemonic: '25 word phrase'
+});
+```
+</details>
+
+
+<details>
+<summary><h3>🐙 ex: advance inkey ↕</h3></summary>
+
+algonaut is optimized for inkey! on the top level of algonaut there are useful methods such as: 
+- `algonaut.inkeyLoaded`
+- `algonaut.inkeyLoading`
+- `algonaut.inkeyShow()`
+- `algonaut.inkeyHide()`
+- `algonaut.getInkeyClientSdk()`
+  - which returns the `inkey-client-js` instance
+
+</details>
+
+
+<details>
+<summary><h3>👀 ex: watch account changes ↕</h3></summary>
+
+You can subscribe to account changes like so:
 ```ts
 import { subscribeToAccountChanges } from '@thencc/algonautjs';
 
@@ -164,16 +197,31 @@ const unsubscribe = subscribeToAccountChanges(
   }
 );
 
-// and can unsubscribe
+// + can unsubscribe
 unsubscribe();
 ```
+</details>
+
+
+<details open>
+<summary><h3>🔋 ex: reconnect ↕</h3></summary>
+
+if your dapp wants to recall previously connected accounts from localstorage, it is recommended to call this on page load:
+```ts
+algonaut.reconnect();
+```
+</details>
+
 
 
 ## Submitting Transactions
 
 Submitting/sending transactions is common practice on a dapp and algonautjs makes it simple! `algonaut.sendTransaction()` signs and submits the incoming single txn or array of txns (atomic txn). A powerful feature of the Algorand chain is the ability to group transactions together and run them as one [atomic transactions](https://developer.algorand.org/docs/get-details/atomic_transfers/).
 
-single txn send:
+
+<details open>
+<summary><h3>🚀 single txn send ↕</h3></summary>
+
 ```js
 // construct txn
 const txn = await algonaut.atomicSendAlgo({
@@ -187,9 +235,12 @@ console.log('txn', txn);
 let txnRes = await algonaut.sendTransaction(txn);
 console.log('txnRes', txnRes);
 ```
+</details>
 
 
-atomic txn example:
+<details open>
+<summary><h3>🛸 atomic txn example ↕</h3></summary>
+
 ```js
 // the logic in the 2nd txn's smart contract requires that the first txn in this atomic transaction is a payment txn to a specific address in order for the second txn to succeed.
 // - to interact w app/smart contracts you must include the app id in the optionalFields.applications array.
@@ -217,12 +268,12 @@ algonaut.sendTransaction( txnArr , {
   }
 })
 ```
+</details>
 
-## Signing Transactions (without submitting)
+
+## Sign Transactions (without submitting)
 
 ```ts
-import { signTransactions } from '@thencc/algonautjs';
-
 // make some txn(s)
 const txn1 = await algonaut.atomicSendAlgo({
   amount: 1000,
@@ -231,9 +282,9 @@ const txn1 = await algonaut.atomicSendAlgo({
 const txn2 = await algonaut.atomicOptInAsset(10458941);
 
 // prompts user for txn approval in wallet ui
-const signedTxns = await signTransactions([
-  txn1.toByte(),
-  txn2.toByte(),
+const signedTxns = await algonaut.signTransactions([
+  txn1,
+  txn2,
 ]);
 // NOTE: signedTxns is an array of Uint8Array's (raw algo txn bytes)
 
@@ -243,24 +294,34 @@ console.log('tx id: ', txnGroup.txId);
 ```
 
 
-## Using a custom Algorand node
+## Set Algorand Node
 
-algonaut ships w a default testnet node pre-configured and enabled but this does not stop you from providing your own. here's how:
+algonaut ships w a default testnet node pre-configured and enabled but feel free to change it. here's how:
 
 ```ts
+// testnet
+const algonaut = new Algonaut();
+algonaut.setNodeConfig('testnet');
+
+// mainnet
+const algonaut = new Algonaut();
+algonaut.setNodeConfig('mainnet');
+
+// custom node (on init)
 const algonaut = new Algonaut({
   nodeConfig: {
     BASE_SERVER: 'https://testnet-algorand.api.purestake.io/ps2',
-    API_TOKEN: { 'X-API-Key': 'MY_KEY_HERE' }, // key is header, value is token
+    // key is header, value is token
+    API_TOKEN: { 'X-API-Key': 'INSERT_KEY_HERE' }, 
     LEDGER: 'TestNet',
     PORT: ''
   }
 });
 
-// or, sometime after intialization (like if your dapp wants to switch between testnet/mainnet)
+// custom node (after init)
 algonaut.setNodeConfig({
   BASE_SERVER: 'https://mainnet-algorand.api.purestake.io/ps2',
-  API_TOKEN: { 'X-API-Key': 'MY_KEY_HERE' },
+  API_TOKEN: { 'X-API-Key': 'INSERT_KEY_HERE' },
   LEDGER: 'MainNet',
   PORT: ''
 });
