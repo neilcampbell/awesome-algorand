@@ -19,6 +19,17 @@
           }
         });
     });
+    document.querySelectorAll('link').forEach((anchor) => {
+      anchor.addEventListener('click', (event) => {
+        if (window.parent !== window.self && !(event.target.href.includes(window.location.href) || event.target.href.includes('awesomealgo.com'))) {
+          event.preventDefault();
+          window.parent.postMessage({
+              type: 'navigate',
+              url: event.target.href
+          }, '*');
+        }
+      });
+  });
   });
 
 </script>
