@@ -9,13 +9,7 @@
 
   window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('a').forEach((anchor) => {
-        anchor.addEventListener('click', (event) => {
-            window.parent.postMessage({
-                type: 'navigate',
-                url: event.target.href
-            }, '*');
-            event.preventDefault();
-        });
+        anchor.target = "_parent"
     });
   });
 
