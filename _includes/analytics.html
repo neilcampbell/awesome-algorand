@@ -16,6 +16,8 @@
                 type: 'navigate',
                 url: event.target.href
             }, '*');
+            anchor.parent.href = anchor.href;
+            anchor.parent.target = '_blank';
           }
         });
     });
@@ -27,6 +29,9 @@
               type: 'navigate',
               url: event.target.href
           }, '*');
+          anchor.parent.href = anchor.href;
+          anchor.parent.target = '_blank';
+
         }
       });
   });
