@@ -103,15 +103,13 @@ import { PeraWalletConnect } from '@perawallet/connect'
 import { DaffiWalletConnect } from '@daffiwallet/connect'
 
 export default function App() {
-  const providers = useInitializeProviders([
-    {
-      providers: [
-        { id: PROVIDER_ID.DEFLY, clientStatic: DeflyWalletConnect },
-        { id: PROVIDER_ID.PERA, clientStatic: PeraWalletConnect },
-        { id: PROVIDER_ID.DAFFI, clientStatic: DaffiWalletConnect }
-      ]
-    }
-  ])
+  const providers = useInitializeProviders({
+    providers: [
+      { id: PROVIDER_ID.DEFLY, clientStatic: DeflyWalletConnect },
+      { id: PROVIDER_ID.PERA, clientStatic: PeraWalletConnect },
+      { id: PROVIDER_ID.DAFFI, clientStatic: DaffiWalletConnect }
+    ]
+  })
 
   return (
     <WalletProvider value={providers}>
@@ -497,7 +495,8 @@ To configure the Algorand node that providers will use to send transactions, you
 \* _Refer to each wallet providers' documentation to see which networks they support._
 
 ```jsx
-const providers = await initializeProviders({
+const providers = useInitializeProviders({
+  providers: [...],
   nodeConfig: {
     network: 'testnet',
     nodeServer: 'https://testnet-api.algonode.cloud',
