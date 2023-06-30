@@ -8,7 +8,7 @@
 
 `@txnlab/use-wallet` is a React library that provides a simplified, consistent interface for integrating multiple Algorand wallets into your decentralized applications (dApps).
 
-[![npm version](https://badge.fury.io/js/%40txnlab%2Fuse-wallet.svg)](https://badge.fury.io/js/%40txnlab%2Fuse-wallet)
+[![npm version](https://badge.fury.io/js/@txnlab%2Fuse-wallet.svg)](https://badge.fury.io/js/@txnlab%2Fuse-wallet)
 ![License](https://img.shields.io/github/license/TxnLab/use-wallet)
 
 ## Overview
@@ -107,7 +107,8 @@ export default function App() {
     providers: [
       { id: PROVIDER_ID.DEFLY, clientStatic: DeflyWalletConnect },
       { id: PROVIDER_ID.PERA, clientStatic: PeraWalletConnect },
-      { id: PROVIDER_ID.DAFFI, clientStatic: DaffiWalletConnect }
+      { id: PROVIDER_ID.DAFFI, clientStatic: DaffiWalletConnect },
+      { id: PROVIDER_ID.EXODUS }
     ]
   })
 
@@ -617,7 +618,11 @@ const providers = useInitializeProviders({
 })
 ```
 
-**IMPORTANT:** Only wallets that have been upgraded to support WalletConnect 2.0 will be able to connect to your app with this provider.
+**IMPORTANT:** Wallets must migrate to WalletConnect v2 or they will NOT work with this provider. **The latest versions of Pera Wallet, Defly Wallet, and Daffi Wallet still support WalletConnect v1 ONLY.**
+
+### Defly beta (iOS)
+
+iOS users can join the Defly Wallet beta program for WalletConnect v2 support: https://testflight.apple.com/join/S66wwJpq
 
 ### "Module not found" errors in Next.js 13
 
@@ -777,6 +782,8 @@ Are you using `@txnlab/use-wallet`? We'd love to include your project here. Let 
 
 - [@algoscan/use-wallet-ui](https://github.com/algoscan/use-wallet-ui)
 - [@algoworldnft/algoworld-swapper](https://github.com/algoworldnft/algoworld-swapper)
+- [Algogator](https://algogator.finance/)
+- [Notiboy](https://notiboy.com/)
 
 Full list of [Dependents](https://github.com/TxnLab/use-wallet/network/dependents)
 
