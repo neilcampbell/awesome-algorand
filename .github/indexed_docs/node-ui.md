@@ -16,18 +16,16 @@ Terminal UI for remote Algorand node management.
 See the GitHub releases and download the binary for your platform.
 
 ## Source
-Use go1.17 or later and build with `make`.
+Use go1.20.5 or later and build with `make`.
 
 # Usage
 With no options, the UI will be displayed instead of starting a service.
 
 ## Local Algod
-If you're using the downloaded binary, use `./node-ui` instead of `./nodeui`
 ```
 ~$ ALGORAND_DATA=path/to/data/dir ./nodeui
 ```
 ## Remote Algod
-If you're using the downloaded binary, use `./node-ui` instead of `./nodeui`
 ```
 ~$ ./nodeui -t <algod api token> -u http://<url>
 ```
@@ -75,6 +73,5 @@ Contributions are welcome! There are no plans to actively maintain this project,
 # How to create a new release
 
 1. Create a tag: `git tag -a v_._._ -m "v_._._" && git push origin v_._._`
-2. Make sure the dist directory does not exist: `rm -rf dist`
-3. Export a GitHub token with `repo` scope: `export GITHUB_TOKEN=_`
-4. Install & run goreleaser: `goreleaser release`
+2. Push the tag.
+3. CI should create a release, attach it to GitHub and publish images to docker hub.
