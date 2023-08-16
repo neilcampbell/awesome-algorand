@@ -76,7 +76,7 @@ importer:
 processors:
 
 exporter:
-    name: "file_writer"
+    name: file_writer
     config:
         # the default config writes block data to the data directory.
 ```
