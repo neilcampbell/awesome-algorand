@@ -12,13 +12,18 @@ Professional software engineers from a range of backgrounds, such as C# game dev
 
 On this page you will find **[getting started](#getting-started)** instructions for developers, details on the functional areas and **[capabilities](#capabilities)** , and the **[project roadmap](#roadmap)**.
 
-The current version is an Alpha release aimed at garnering feedback, bugs, requirements and any other modifications to general direction.  Do expect bugs, breaking changes, and shifts in direction. 
+There is now **[a video series](https://www.youtube.com/playlist?list=PLYKanKMyGPgvuYhF9uv9E1GoOJx8q1for)** introducing both Algorand and this tooling, aimed at developers.
 
-*DISCLAIMER: DO NOT USE THIS VERSION FOR PRODUCTION CODE. WE ARE NOT LIABLE FOR ANYTHING.*
+The current version is an Beta release aimed at garnering feedback, bugs, requirements and any other modifications to general direction.  Do expect bugs, breaking changes, and shifts in direction. 
+
+*DISCLAIMER: This product is under development and should only be used in production scenarios at your own risk. Smart Contract authoring has inherent risks. We are not liable for anything that may occur from using this product.*
 
 ## USING THE TEMPLATES
 
 After creating a project using a template here, please **Update Nuget Packages** and then **Unload and Reload the project in VS**.
+
+## UPDATE (August 2023)
+Interactive smart contract debugging using the Visual Studio IDE coming in September.
 
 ## UPDATE (February 2023)
 
@@ -30,7 +35,7 @@ The latest version at 1.6 now includes the following changes.
 
 ## UPDATE (November 2022)
 
-The latest version at 1.4 now includes the following changes. Documentation will be updated shortly to reflect the below.
+The latest version at 1.4 now includes the following changes. 
 - A new template allowing direct use of the Sandbox without having to manipulate private keys. Just create the project, start the sandbox and it's ready to go.
 - Support for floating point decimal. The ``decimal``type can now be used. (The generated TEAL is quite expensive.) Conversion from integer types are permitted and conversion from decimal to ulong.
 - Integer ``Pow`` and ``Sqrt`` are now added.
@@ -393,9 +398,6 @@ the tooling only allows read operations on complex types and array, apart from b
 
 Update functionality will be added later, as the encoding now makes it easy for this to achieve.
 
-### Box storage
-
-This will be added in the near future as a State type for complex/simple types.
 
 ### Scratch Variables
 
