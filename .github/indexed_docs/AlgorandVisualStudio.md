@@ -22,8 +22,11 @@ The current version is an Beta release aimed at garnering feedback, bugs, requir
 
 After creating a project using a template here, please **Update Nuget Packages** and then **Unload and Reload the project in VS**.
 
-## UPDATE (August 2023)
-Interactive smart contract debugging using the Visual Studio IDE coming in September.
+## UPDATE (September 2023)
+Interactive TEAL debugging is now available. This is a major milestone for the project. 
+The roadmap now includes incorporating the 
+debugger into the proxy generated code. For now, manually created
+app calls can be debugged interactively.
 
 ## UPDATE (February 2023)
 
@@ -66,7 +69,8 @@ The latest version at 1.4 now includes the following changes.
     - [Web Template](./ProjectTemplates/Web.md)
     - [Console for Sandbox](./ProjectTemplates/ConsoleForSandbox.md)
     - [Smart Signature](./ProjectTemplates/ConsoleSmartSignature.md)
-
+- Debugger
+  - [Teal Interactive Debugger](./Debugger/Debugger.md)
 
 
 
@@ -350,7 +354,9 @@ ConditionalLogic1 was a SmartContract class in the file ConditionalLogic. This a
 
 Project templates are included, offering skeleton architectures and educational code to get up and running quickly. 
 
+### TEAL Interactive Debugging
 
+Please see the [TEAL Interactive Debugging](./Debugger/Debugger.md) section for details on how to use the TEAL Interactive Debugger.
 
 ## **Roadmap**
 
@@ -430,9 +436,7 @@ myArray[0]++;
 
 New optimisers will be added over time, as part of this project or if supplied by the community.
 
-### Debugger
 
-A complete debugger for TEAL will be offered.
 
 ### Formal Analysis
 
