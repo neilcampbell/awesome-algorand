@@ -20,7 +20,7 @@
 
 ## 🌟 About
 
-Subtopia JS SDK is a JavaScript library for interacting with the Subtopia Platform. It provides a simple interface for creating and managing Subscription Management Infrastructures (`SMI`s).
+Subtopia JS SDK is a JavaScript library for interacting with the Subtopia Platform. It provides a simple interface for creating and managing `Products` (Contracts that are responsible for subscription management).
 
 > For detailed documentation, refer to [sdk.subtopia.io](https://sdk.subtopia.io).
 
@@ -43,7 +43,7 @@ yarn add subtopia-js
 ### Import the package:
 
 ```ts
-import { SubtopiaClient } from "subtopia-js";
+import { SubtopiaClient, SubtopiaRegistryClient } from "subtopia-js";
 ```
 
 ## 🛠️ Usage
@@ -57,16 +57,18 @@ Example snippets of using the Subtopia JS SDK.
 ```ts
 // ... your code
 
-const response = await SubtopiaClient.subscribe(
-  {
-    subscriber: { address: {PUT_WALLET_ADDRESS}, signer: {PUT_WALLET_SIGNER} },
-    smiID: { PUT_PRODUCT_ID_HERE }, // number - the ID of the SMI instance you want to subscribe to
-    duration: { PUT_EXPIRATION_TYPE_HERE }, // pick duration from Duration enum. If there is a discount available for this duration, it will be auto applied.
-  },
-  { client: {PUT_ALGOD_INSTANCE_HERE} // object of type algosdk.Algodv2
+const subtopiaClient = await SubtopiaClient.init(
+  { PUT_ALGOD_INSTANCE_HERE },
+  { PUT_PRODUCT_ID_HERE },
+  { address: { PUT_WALLET_ADDRESS }, signer: { PUT_WALLET_SIGNER } }
 );
 
-console.log(response.returnValue) // response is of type ABIResult
+const response = await subtopiaClient.subscribe(
+  { address: { PUT_WALLET_ADDRESS }, signer: { PUT_WALLET_SIGNER } },
+  { PUT_DURATION_HERE } // pick duration from Duration enum. If there is a discount available for this duration, it will be auto applied.
+);
+
+console.log(response.txID); // response is of type string
 
 // ... rest of your code
 ```
@@ -75,14 +77,12 @@ console.log(response.returnValue) // response is of type ABIResult
 
 ```ts
 // ... your code
-const subscriberBox = await SubtopiaClient.getSubscriptionRecordForAccount(
-  client,
-  { PUT_SUBSCRIBER_ADDRESS },
-  { PUT_PRODUCT_ID_HERE }
-);
+const subscriptionRecord = await subtopiaClient.getSubscription({
+  subscriberAddress: { PUT_SUBSCRIBER_ADDRESS },
+});
 
 // SubscriptionRecord (throws Error if not subscribed)
-console.log(subscriberBox);
+console.log(subscriptionRecord);
 // ... rest of your code
 ```
 
@@ -90,21 +90,15 @@ console.log(subscriberBox);
 
 ```ts
 // ... your code
-const deleteResult = await SubtopiaClient.unsubscribe(
-  {
-    subscriber: {
-      address: { PUT_SUBSCRIBER_ADDRESS },
-      signer: { PUT_SUBSCRIBER_SIGNER },
-    },
-    smiID: { PUT_INFRASTRUCTURE_ID },
+const deleteResult = await subtopiaClient.unsubscribe({
+  subscriber: {
+    address: { PUT_SUBSCRIBER_ADDRESS },
+    signer: { PUT_SUBSCRIBER_SIGNER },
   },
-  {
-    client: { PUT_ALGOD_CLIENT },
-  }
-);
+});
 
-// ID of the deleted subscription ASA
-console.log(deleteResult.returnValue);
+// Transaction ID of the unsubscribe transaction
+console.log(deleteResult.txID);
 // ... your code
 ```
 
@@ -112,21 +106,16 @@ console.log(deleteResult.returnValue);
 
 ```ts
 // ... your code
-const transferResult = await SubtopiaClient.transferSubscriptionPass(
-  {
-    newOwnerAddress: { PUT_NEW_OWNER_ADDRESS },
-    oldOwner: {
-      address: { PUT_OLD_OWNER_ADDRESS },
-      signer: { PUT_OLD_OWNER_SIGNER },
-    },
-    smiID: { PUT_INFRASTRUCTURE_ID },
-    subID: Number(result.returnValue),
+const transferResult = await subtopiaClient.transferSubscription({
+  oldSubscriber: {
+    address: { PUT_OLD_SUBSCRIBER_ADDRESS },
+    signer: { PUT_OLD_SUBSCRIBER_SIGNER },
   },
-  { client: { PUT_ALGOD_CLIENT } }
-);
+  newSubscriberAddress: { PUT_NEW_SUBSCRIBER_ADDRESS },
+});
 
 // Transaction ID of the transfer transaction
-console.log(deleteResult.txID);
+console.log(transferResult.txID);
 // ... your code
 ```
 
@@ -137,22 +126,23 @@ console.log(deleteResult.txID);
 ```ts
 // ... your code
 
-const discount = await SubtopiaClient.createDiscount(
-  {
-    creator: { address: {PUT_WALLET_ADDRESS}, signer: {PUT_WALLET_SIGNER} },
-    smiID: { PUT_PRODUCT_ID_HERE }, // number - the ID of the SMI instance you want to subscribe to
-    discount: {
-      duration: Duration // number - the type of expiration to apply. Also serves as static id for the discount.
-      discountType: {PUT_DISCOUNT_TYPE_HERE} // number - the type of discount to apply. FIXED or PERCENTAGE
-      discountValue: {PUT_DISCOUNT_VALUE_HERE} // number - the discount to be deducted from the subscription price
-      expiresIn: {PUT_EXPIRATION_TIME_HERE} // (Optional) Set 0 for discount to never expire. Else set number of seconds to append to unix timestamp at time of creation.
-    }, // number - the discount in percent
-  },
-  { client: {PUT_ALGOD_INSTANCE_HERE} } // object of type algosdk.Algodv2
+const subtopiaRegistryClient = await SubtopiaRegistryClient.init(
+  { PUT_ALGOD_INSTANCE_HERE },
+  { address: { PUT_WALLET_ADDRESS }, signer: { PUT_WALLET_SIGNER } },
+  { PUT_CHAIN_TYPE_HERE }
 );
 
+const discount = await subtopiaRegistryClient.createDiscount({
+  productID: { PUT_PRODUCT_ID_HERE }, // number - the ID of the Product instance you want to create a discount for
+  discount: {
+    duration: { PUT_DURATION_HERE }, // number - the type of duration to apply. Also serves as static id for the discount.
+    discountType: { PUT_DISCOUNT_TYPE_HERE }, // number - the type of discount to apply. FIXED or PERCENTAGE
+    discountValue: { PUT_DISCOUNT_VALUE_HERE }, // number - the discount to be deducted from the subscription price
+    expiresIn: { PUT_EXPIRATION_TIME_HERE }, // (Optional) Set 0 for discount to never expire. Else set number of seconds to append to unix timestamp at time of creation.
+  }, // number - the discount in percent
+});
 
-console.log(discount.returnValue) // response is of type ABIResult
+console.log(discount.txID); // response is of type string
 
 // ... rest of your code
 ```
@@ -162,10 +152,9 @@ console.log(discount.returnValue) // response is of type ABIResult
 ```ts
 // ... your code
 
-const discount = await SubtopiaClient.getDiscountRecordForType(
-  client,
-  { PUT_PRODUCT_ID_HERE }
-  { PUT_EXPIRATION_TYPE_HERE },
+const discount = await subtopiaRegistryClient.getDiscount(
+  productID: { PUT_PRODUCT_ID_HERE },
+  duration: { PUT_DURATION_HERE },
 );
 
 // DiscountRecord (throws Error if not found)
@@ -178,21 +167,12 @@ console.log(discount);
 ```ts
 // ... your code
 
-const deleteResult = await SubtopiaClient.deleteDiscount(
-  {
-    creator: {
-      address: { PUT_SUBSCRIBER_ADDRESS },
-      signer: { PUT_SUBSCRIBER_SIGNER },
-    },
-    smiID: { PUT_INFRASTRUCTURE_ID },
-    duration: { PUT_EXPIRATION_TYPE_HERE },
-  },
-  {
-    client: { PUT_ALGOD_CLIENT },
-  }
-);
+const deleteResult = await subtopiaRegistryClient.deleteDiscount({
+  productID: { PUT_PRODUCT_ID },
+  duration: { PUT_DURATION_HERE },
+});
 
-// ID of the deleted discount ASA txn
+// Transaction ID of the delete discount transaction
 console.log(deleteResult.txID);
 // ... your code
 ```
