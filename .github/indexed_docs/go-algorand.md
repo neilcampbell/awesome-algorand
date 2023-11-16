@@ -100,7 +100,7 @@ Please refer to our [CONTRIBUTING](CONTRIBUTING.md) document.
 
 ## Project Layout
 
-`go-algorand` is split into various subsystems containing varius packages.
+`go-algorand` is split into various subsystems containing various packages.
 
 ### Core
 
