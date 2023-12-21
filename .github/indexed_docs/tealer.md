@@ -4,12 +4,14 @@
 
 # Tealer
 
-Tealer is a static analyzer for [Teal](https://developer.algorand.org/docs/features/asc1/) code. It parses the Teal program, and builds its CFG. The analyzer comes with a set of vulnerabilities detectors and printers allowing to quickly review the contracts.
+Tealer is a static analyzer for [Teal](https://developer.algorand.org/docs/features/asc1/) code.
+It parses the Teal program, and builds its CFG. The analyzer comes with a set of vulnerabilities detectors and printers allowing to quickly review the contracts.
+In addition, tealer allows for custom path discovery through [regular expression](#regular-expressio), and can be configured to follow the [group information](#group-configuration) of the application.
 
 - [Usage](#Usage)
   - [Detectors](#detectors): Vulnerabilities detectors
   - [Printers](#printers): Visual information
-  - [Regular expression](#Regular expression): Regular expression engine
+  - [Regular expression](#regular-expressio): Regular expression engine
 - [How to install](#how-to-install)
 - [Group configuration](#group-configuration)
 
@@ -93,6 +95,8 @@ For an example, run `tealer regex tests/regex/regex.txt --contract tests/regex/v
 Which will generate `regex_result.dot`.
 
 ## How to install
+
+`pip3 install tealer`
 
 ### Using Git
 
