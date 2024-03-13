@@ -29,7 +29,7 @@ class Calculator extends Contract {
    * @param b
    * @returns The sum of a and b
    */
-  private getSum(a: number, b: number): number {
+  private getSum(a: uint64, b: uint64): uint64 {
     return a + b;
   }
 
@@ -40,7 +40,7 @@ class Calculator extends Contract {
    * @param b
    * @returns The difference between a and b.
    */
-  private getDifference(a: number, b: number): number {
+  private getDifference(a: uint64, b: uint64): uint64 {
     return a >= b ? a - b : b - a;
   }
 
@@ -53,8 +53,8 @@ class Calculator extends Contract {
    *
    * @returns The result of the operation
    */
-  doMath(a: number, b: number, operation: string): number {
-    let result: number;
+  doMath(a: uint64, b: uint64, operation: string): uint64 {
+    let result: uint64;
 
     if (operation === 'sum') {
       result = this.getSum(a, b);
