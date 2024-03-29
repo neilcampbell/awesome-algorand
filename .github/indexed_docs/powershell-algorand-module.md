@@ -3,9 +3,9 @@
 ---
 
 # powershell-algorand-module
-[![Dev CI](https://dev.azure.com/gbo-devops/github-pipelines/_apis/build/status/Algorand.PowerShell/Algorand.PowerShell%20Dev%20CI?branchName=develop)](https://dev.azure.com/gbo-devops/github-pipelines/_build/latest?definitionId=13&branchName=develop)
+[![CI/CD](https://github.com/geoffodonnell/powershell-algorand-module/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/geoffodonnell/powershell-algorand-module/actions/workflows/ci-cd.yml)
 [![PSGallery version](https://img.shields.io/powershellgallery/v/Algorand?include_prereleases)](https://www.powershellgallery.com/packages/Algorand)
-[![Donate Algo](https://img.shields.io/badge/Donate-ALGO-000000.svg?style=flat)](https://algoexplorer.io/address/EJMR773OGLFAJY5L2BCZKNA5PXLDJOWJK4ED4XDYTYH57CG3JMGQGI25DQ)
+[![Donate Algo](https://img.shields.io/badge/Donate-ALGO-000000.svg?style=flat)](https://explorer.perawallet.app/address/EJMR773OGLFAJY5L2BCZKNA5PXLDJOWJK4ED4XDYTYH57CG3JMGQGI25DQ/)
 
 # Overview
 This PowerShell module provides tools for the Algorand blockchain.
@@ -117,7 +117,7 @@ PS> Get-AlgorandAccount | Get-AlgorandAccountInfo | Select -ExpandProperty Asset
 
 ### Send a payment transaction
 ```PowerShell
-PS> $sender = Get-AlgorandAccount
+PS> $sender = Get-AlgorandAccount -GetAll | Select-Object -First 1
 PS> $receiver = "ZZ6Z5YKFYOEINYKVID4HNJCM23OWAP5UP6IRTE4YPY27VMXPDJHMVAWUAY"
 PS> $amount = 3000
 
@@ -146,15 +146,16 @@ Find-AlgorandAccount
 ```
 
 # Build
+
 ## Prerequisites
-* .NET 6 SDK
-* PowerShell 7.2
+* .NET 8 SDK
+* PowerShell 7.4
 
 ## Local
 Clone this repository and execute `build-and-load-local.ps1` in a PowerShell window to build the module and import it into the current session. By default, when building locally the module is named `Algorand.Local`.
 
 ## Pipelines
-powershell-algorand-module build pipelines use the [Assembly Info Task](https://github.com/BMuuN/vsts-assemblyinfo-task) extension.
+powershell-outauth-module build pipelines use GitHub Actions workflows.
 
 # License
 powershell-algorand-module is licensed under a MIT license except for the exceptions listed below. See the LICENSE file for details.
