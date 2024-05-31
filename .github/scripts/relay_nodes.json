@@ -1,507 +1,12 @@
 [
   {
-    "lat": 42.6951,
-    "lon": 23.325,
-    "countryCode": "BG",
-    "country": "Bulgaria",
-    "city": "Sofia",
-    "domain": "r-wh.algorand-mainnet.network.",
-    "ip": "37.19.203.137"
-  },
-  {
-    "lat": 22.3193,
-    "lon": 114.169,
-    "countryCode": "HK",
-    "country": "Hong Kong",
-    "city": "Hong Kong",
-    "domain": "r-bh.algorand-mainnet.network.",
-    "ip": "169.150.222.198"
-  },
-  {
-    "lat": 60.1719,
-    "lon": 24.9347,
-    "countryCode": "FI",
-    "country": "Finland",
-    "city": "Helsinki",
-    "domain": "r-er.algorand-mainnet.network.",
-    "ip": "95.217.168.85"
-  },
-  {
-    "lat": 32.0958,
-    "lon": 34.9522,
-    "countryCode": "IL",
-    "country": "Israel",
-    "city": "Rosh Ha\u2018Ayin",
-    "domain": "r-om.algorand-mainnet.network.",
-    "ip": "64.176.168.249"
-  },
-  {
-    "lat": 25.8119,
-    "lon": -80.2318,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Miami",
-    "domain": "r-vi.algorand-mainnet.network.",
-    "ip": "172.96.172.36"
-  },
-  {
-    "lat": 33.7485,
-    "lon": -84.3871,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Atlanta",
-    "domain": "r-cj.algorand-mainnet.network.",
-    "ip": "64.74.160.106"
-  },
-  {
-    "lat": 45.8293,
-    "lon": 15.9793,
-    "countryCode": "HR",
-    "country": "Croatia",
-    "city": "Zagreb",
-    "domain": "r-kp.algorand-mainnet.network.",
-    "ip": "169.150.242.42"
-  },
-  {
-    "lat": 1.352,
-    "lon": 103.8198,
-    "countryCode": "SG",
-    "country": "Singapore",
-    "city": "Singapore",
-    "domain": "r-r7.algorand-mainnet.network.",
-    "ip": "67.209.54.136"
-  },
-  {
-    "lat": 54.7476,
-    "lon": 25.5025,
-    "countryCode": "LT",
-    "country": "Lithuania",
-    "city": "Vilnius",
-    "domain": "r-hd.algorand-mainnet.network.",
-    "ip": "195.238.127.42"
-  },
-  {
-    "lat": 50.475,
-    "lon": 12.365,
-    "countryCode": "DE",
-    "country": "Germany",
-    "city": "Falkenstein",
-    "domain": "r-u6.algorand-mainnet.network.",
-    "ip": "49.12.17.217"
-  },
-  {
-    "lat": 43.6532,
-    "lon": -79.3832,
-    "countryCode": "CA",
-    "country": "Canada",
-    "city": "Toronto",
-    "domain": "r-ic.algorand-mainnet.network.",
-    "ip": "104.18.17.21"
-  },
-  {
-    "lat": 40.0992,
-    "lon": -83.1141,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Dublin",
-    "domain": "r-c7.algorand-mainnet.network.",
-    "ip": "3.140.75.230"
-  },
-  {
-    "lat": 33.7485,
-    "lon": -84.3871,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Atlanta",
-    "domain": "r-hr.algorand-mainnet.network.",
-    "ip": "195.181.171.207"
-  },
-  {
-    "lat": 33.6446,
-    "lon": -111.895,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Scottsdale",
-    "domain": "r-ol.algorand-mainnet.network.",
-    "ip": "23.81.207.33"
-  },
-  {
-    "lat": 49.4521,
-    "lon": 11.0767,
-    "countryCode": "DE",
-    "country": "Germany",
-    "city": "Nuremberg",
-    "domain": "r-pn.algorand-mainnet.network.",
-    "ip": "167.235.65.180"
-  },
-  {
-    "lat": 42.0172,
-    "lon": -87.8691,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Des Plaines",
-    "domain": "r-h7.algorand-mainnet.network.",
-    "ip": "69.65.31.5"
-  },
-  {
-    "lat": 50.458,
-    "lon": 30.5303,
-    "countryCode": "UA",
-    "country": "Ukraine",
-    "city": "Kyiv",
-    "domain": "r-cf.algorand-mainnet.network.",
-    "ip": "195.12.59.106"
-  },
-  {
-    "lat": 15.834,
-    "lon": -92.7557,
-    "countryCode": "MX",
-    "country": "Mexico",
-    "city": "Quer\u00e9taro",
-    "domain": "r-s3.algorand-mainnet.network.",
-    "ip": "121.127.43.209"
-  },
-  {
-    "lat": 39.0019,
-    "lon": -77.4556,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Ashburn",
-    "domain": "r-ve.algorand-mainnet.network.",
-    "ip": "45.67.15.7"
-  },
-  {
-    "lat": 33.6446,
-    "lon": -111.895,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Scottsdale",
-    "domain": "r-n8.algorand-mainnet.network.",
-    "ip": "23.81.207.34"
-  },
-  {
-    "lat": 35.6893,
-    "lon": 139.6899,
-    "countryCode": "JP",
-    "country": "Japan",
-    "city": "Tokyo",
-    "domain": "r-me.algorand-mainnet.network.",
-    "ip": "109.61.83.164"
-  },
-  {
-    "lat": 53.3498,
-    "lon": -6.2603,
-    "countryCode": "IE",
-    "country": "Ireland",
-    "city": "Dublin",
-    "domain": "r-j5.algorand-mainnet.network.",
-    "ip": "141.98.217.221"
-  },
-  {
-    "lat": 40.4406,
-    "lon": -79.9958,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Pittsburgh",
-    "domain": "r-g5.algorand-mainnet.network.",
-    "ip": "204.16.241.153"
-  },
-  {
-    "lat": 19.0748,
-    "lon": 72.8856,
-    "countryCode": "IN",
-    "country": "India",
-    "city": "Mumbai",
-    "domain": "r-k6.algorand-mainnet.network.",
-    "ip": "172.105.45.161"
-  },
-  {
-    "lat": 19.0748,
-    "lon": 72.8856,
-    "countryCode": "IN",
-    "country": "India",
-    "city": "Mumbai",
-    "domain": "r-nb.algorand-mainnet.network.",
-    "ip": "172.105.44.124"
-  },
-  {
-    "lat": 28.6139,
-    "lon": 77.209,
-    "countryCode": "IN",
-    "country": "India",
-    "city": "New Delhi",
-    "domain": "r-cw.algorand-mainnet.network.",
-    "ip": "185.100.212.60"
-  },
-  {
-    "lat": 45.8293,
-    "lon": 15.9793,
-    "countryCode": "HR",
-    "country": "Croatia",
-    "city": "Zagreb",
-    "domain": "r-qq.algorand-mainnet.network.",
-    "ip": "169.150.242.44"
-  },
-  {
-    "lat": 40.7667,
-    "lon": 14.79,
-    "countryCode": "IT",
-    "country": "Italy",
-    "city": "Fisciano",
-    "domain": "r-pb.algorand-mainnet.network.",
-    "ip": "193.205.184.250"
-  },
-  {
-    "lat": 37.9675,
-    "lon": -122.2899,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "El Sobrante",
-    "domain": "r-rh.algorand-mainnet.network.",
-    "ip": "128.32.157.58"
-  },
-  {
-    "lat": 52.3675,
-    "lon": 4.9041,
-    "countryCode": "NL",
-    "country": "Netherlands",
-    "city": "Amsterdam",
-    "domain": "r-nh.algorand-mainnet.network.",
-    "ip": "74.118.140.108"
-  },
-  {
-    "lat": 1.27989,
-    "lon": 103.849,
-    "countryCode": "SG",
-    "country": "Singapore",
-    "city": "Singapore",
-    "domain": "r-wb.algorand-mainnet.network.",
-    "ip": "15.235.214.19"
-  },
-  {
-    "lat": 40.4406,
-    "lon": -79.9958,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Pittsburgh",
-    "domain": "r-fj.algorand-mainnet.network.",
-    "ip": "204.16.244.199"
-  },
-  {
-    "lat": 52.3675,
-    "lon": 4.9041,
-    "countryCode": "NL",
-    "country": "Netherlands",
-    "city": "Amsterdam",
-    "domain": "r-es.algorand-mainnet.network.",
-    "ip": "74.118.143.112"
-  },
-  {
-    "lat": 41.8904,
-    "lon": 12.5126,
-    "countryCode": "IT",
-    "country": "Italy",
-    "city": "Rome",
-    "domain": "r-fe.algorand-mainnet.network.",
-    "ip": "151.100.174.50"
-  },
-  {
-    "lat": 20.5762,
-    "lon": -100.2951,
-    "countryCode": "MX",
-    "country": "Mexico",
-    "city": "Quer\u00e9taro City",
-    "domain": "r-c4.algorand-mainnet.network.",
-    "ip": "216.238.85.142"
-  },
-  {
-    "lat": 49.2827,
-    "lon": -123.1207,
-    "countryCode": "CA",
-    "country": "Canada",
-    "city": "Vancouver",
-    "domain": "r-iq.algorand-mainnet.network.",
-    "ip": "208.91.104.72"
-  },
-  {
-    "lat": 52.2296,
-    "lon": 21.0067,
-    "countryCode": "PL",
-    "country": "Poland",
-    "city": "Warsaw",
-    "domain": "r-xh.algorand-mainnet.network.",
-    "ip": "84.17.55.173"
-  },
-  {
-    "lat": 60.1797,
-    "lon": 24.9344,
-    "countryCode": "FI",
-    "country": "Finland",
-    "city": "Helsinki",
-    "domain": "r-b2.algorand-mainnet.network.",
-    "ip": "65.109.42.105"
-  },
-  {
-    "lat": 1.352,
-    "lon": 103.8198,
-    "countryCode": "SG",
-    "country": "Singapore",
-    "city": "Singapore",
-    "domain": "r-zl.algorand-mainnet.network.",
-    "ip": "43.156.250.69"
-  },
-  {
-    "lat": 34.0522,
-    "lon": -118.2436,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Los Angeles",
-    "domain": "r-kl.algorand-mainnet.network.",
-    "ip": "74.118.142.70"
-  },
-  {
-    "lat": 40.7123,
-    "lon": -74.0068,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "New York",
-    "domain": "r-oi.algorand-mainnet.network.",
-    "ip": "108.62.50.80"
-  },
-  {
-    "lat": 32.0958,
-    "lon": 34.9522,
-    "countryCode": "IL",
-    "country": "Israel",
-    "city": "Rosh Ha\u2018Ayin",
-    "domain": "r-yp.algorand-mainnet.network.",
-    "ip": "64.176.162.174"
-  },
-  {
-    "lat": -23.5312,
-    "lon": -46.7901,
-    "countryCode": "BR",
-    "country": "Brazil",
-    "city": "Osasco",
-    "domain": "r-kn.algorand-mainnet.network.",
-    "ip": "216.238.116.219"
-  },
-  {
-    "lat": 40.9076,
-    "lon": -73.122,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Stony Brook",
-    "domain": "r-kr.algorand-mainnet.network.",
-    "ip": "130.245.173.83"
-  },
-  {
-    "lat": 46.0316,
-    "lon": 8.92433,
-    "countryCode": "CH",
-    "country": "Switzerland",
-    "city": "Manno",
-    "domain": "r-hg.algorand-mainnet.network.",
-    "ip": "195.176.181.144"
-  },
-  {
-    "lat": 43.6532,
-    "lon": -79.3832,
-    "countryCode": "CA",
-    "country": "Canada",
-    "city": "Toronto",
-    "domain": "r-z8.algorand-mainnet.network.",
-    "ip": "104.18.16.21"
-  },
-  {
-    "lat": 32.0929,
-    "lon": 34.8072,
-    "countryCode": "IL",
-    "country": "Israel",
-    "city": "Ramat Gan",
-    "domain": "r-tc.algorand-mainnet.network.",
-    "ip": "132.67.252.201"
-  },
-  {
-    "lat": 42.6951,
-    "lon": 23.325,
-    "countryCode": "BG",
-    "country": "Bulgaria",
-    "city": "Sofia",
-    "domain": "r-ny.algorand-mainnet.network.",
-    "ip": "37.19.203.138"
-  },
-  {
     "lat": 38.9609,
     "lon": -77.3429,
     "countryCode": "US",
     "country": "United States",
     "city": "Reston",
-    "domain": "r-l3.algorand-mainnet.network.",
-    "ip": "15.204.220.9"
-  },
-  {
-    "lat": 40.5118,
-    "lon": -111.475,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Midway",
-    "domain": "r-v4.algorand-mainnet.network.",
-    "ip": "69.160.65.233"
-  },
-  {
-    "lat": 42.3592,
-    "lon": -71.0931,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Cambridge",
-    "domain": "r-au.algorand-mainnet.network.",
-    "ip": "128.31.0.83"
-  },
-  {
-    "lat": 52.2296,
-    "lon": 21.0067,
-    "countryCode": "PL",
-    "country": "Poland",
-    "city": "Warsaw",
-    "domain": "r-m1.algorand-mainnet.network.",
-    "ip": "84.17.55.172"
-  },
-  {
-    "lat": 40.4163,
-    "lon": -3.6934,
-    "countryCode": "ES",
-    "country": "Spain",
-    "city": "Madrid",
-    "domain": "r-zw.algorand-mainnet.network.",
-    "ip": "185.140.208.170"
-  },
-  {
-    "lat": 19.0748,
-    "lon": 72.8856,
-    "countryCode": "IN",
-    "country": "India",
-    "city": "Mumbai",
-    "domain": "r-c3.algorand-mainnet.network.",
-    "ip": "172.105.46.167"
-  },
-  {
-    "lat": 4.6115,
-    "lon": -74.0833,
-    "countryCode": "CO",
-    "country": "Colombia",
-    "city": "Bogot\u00e1",
-    "domain": "r-k7.algorand-mainnet.network.",
-    "ip": "169.150.228.12"
-  },
-  {
-    "lat": 45.8293,
-    "lon": 15.9793,
-    "countryCode": "HR",
-    "country": "Croatia",
-    "city": "Zagreb",
-    "domain": "r-ui.algorand-mainnet.network.",
-    "ip": "169.150.242.41"
+    "domain": "r-xx.algorand-mainnet.network.",
+    "ip": "15.204.220.7"
   },
   {
     "lat": 32.7797,
@@ -513,85 +18,31 @@
     "ip": "89.187.175.83"
   },
   {
-    "lat": 45.5075,
-    "lon": -73.5887,
-    "countryCode": "CA",
-    "country": "Canada",
-    "city": "Montreal",
-    "domain": "r-u4.algorand-mainnet.network.",
-    "ip": "172.96.167.154"
-  },
-  {
-    "lat": 34.0522,
-    "lon": -118.2436,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Los Angeles",
-    "domain": "r-pi.algorand-mainnet.network.",
-    "ip": "74.118.142.72"
-  },
-  {
-    "lat": 50.0883,
-    "lon": 14.4124,
-    "countryCode": "CZ",
-    "country": "Czechia",
-    "city": "Prague",
-    "domain": "r-oc.algorand-mainnet.network.",
-    "ip": "212.102.38.113"
-  },
-  {
-    "lat": 39.0469,
-    "lon": -77.4903,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Ashburn",
-    "domain": "r-np.algorand-mainnet.network.",
-    "ip": "121.127.42.101"
-  },
-  {
-    "lat": -26.2309,
-    "lon": 28.0583,
-    "countryCode": "ZA",
-    "country": "South Africa",
-    "city": "Johannesburg",
-    "domain": "r-s2.algorand-mainnet.network.",
-    "ip": "169.150.246.89"
-  },
-  {
-    "lat": 49.4423,
-    "lon": 11.0191,
-    "countryCode": "DE",
-    "country": "Germany",
-    "city": "Nuremberg",
-    "domain": "r-xb.algorand-mainnet.network.",
-    "ip": "49.13.202.168"
-  },
-  {
-    "lat": 37.9842,
-    "lon": 23.7353,
-    "countryCode": "GR",
-    "country": "Greece",
-    "city": "Athens",
-    "domain": "r-l2.algorand-mainnet.network.",
-    "ip": "79.127.218.211"
-  },
-  {
-    "lat": 32.7908,
-    "lon": -96.8336,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Dallas",
-    "domain": "r-s0.algorand-mainnet.network.",
-    "ip": "64.94.95.234"
-  },
-  {
     "lat": 49.4521,
     "lon": 11.0767,
     "countryCode": "DE",
     "country": "Germany",
     "city": "Nuremberg",
-    "domain": "r-ho.algorand-mainnet.network.",
-    "ip": "167.235.107.245"
+    "domain": "r-te.algorand-mainnet.network.",
+    "ip": "167.235.110.199"
+  },
+  {
+    "lat": 15.834,
+    "lon": -92.7557,
+    "countryCode": "MX",
+    "country": "Mexico",
+    "city": "Quer\u00e9taro",
+    "domain": "r-s3.algorand-mainnet.network.",
+    "ip": "121.127.43.209"
+  },
+  {
+    "lat": 52.3675,
+    "lon": 4.9041,
+    "countryCode": "NL",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "domain": "r-es.algorand-mainnet.network.",
+    "ip": "74.118.143.112"
   },
   {
     "lat": 40.5118,
@@ -603,87 +54,6 @@
     "ip": "69.160.65.232"
   },
   {
-    "lat": 37.3882,
-    "lon": -121.888,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "San Jose",
-    "domain": "r-ju.algorand-mainnet.network.",
-    "ip": "209.58.138.231"
-  },
-  {
-    "lat": 34.0515,
-    "lon": -118.2707,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Los Angeles",
-    "domain": "r-xz.algorand-mainnet.network.",
-    "ip": "2.56.166.61"
-  },
-  {
-    "lat": 39.0469,
-    "lon": -77.4903,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Ashburn",
-    "domain": "r-v8.algorand-mainnet.network.",
-    "ip": "121.127.42.103"
-  },
-  {
-    "lat": 38.9609,
-    "lon": -77.3429,
-    "countryCode": "US",
-    "country": "United States",
-    "city": "Reston",
-    "domain": "r-xx.algorand-mainnet.network.",
-    "ip": "15.204.220.7"
-  },
-  {
-    "lat": 49.4521,
-    "lon": 11.0767,
-    "countryCode": "DE",
-    "country": "Germany",
-    "city": "Nuremberg",
-    "domain": "r-te.algorand-mainnet.network.",
-    "ip": "167.235.110.199"
-  },
-  {
-    "lat": 49.2827,
-    "lon": -123.1207,
-    "countryCode": "CA",
-    "country": "Canada",
-    "city": "Vancouver",
-    "domain": "r-g9.algorand-mainnet.network.",
-    "ip": "208.91.104.71"
-  },
-  {
-    "lat": -33.8979,
-    "lon": 151.1897,
-    "countryCode": "AU",
-    "country": "Australia",
-    "city": "Sydney",
-    "domain": "r-cb.algorand-mainnet.network.",
-    "ip": "103.217.254.19"
-  },
-  {
-    "lat": 50.0883,
-    "lon": 14.4124,
-    "countryCode": "CZ",
-    "country": "Czechia",
-    "city": "Prague",
-    "domain": "r-oo.algorand-mainnet.network.",
-    "ip": "212.102.38.88"
-  },
-  {
-    "lat": 6.4474,
-    "lon": 3.3903,
-    "countryCode": "NG",
-    "country": "Nigeria",
-    "city": "Lagos",
-    "domain": "r-gw.algorand-mainnet.network.",
-    "ip": "185.147.53.2"
-  },
-  {
     "lat": 37.5794,
     "lon": 126.9754,
     "countryCode": "KR",
@@ -693,22 +63,76 @@
     "ip": "158.247.202.178"
   },
   {
-    "lat": 45.8293,
-    "lon": 15.9793,
-    "countryCode": "HR",
-    "country": "Croatia",
-    "city": "Zagreb",
-    "domain": "r-rz.algorand-mainnet.network.",
-    "ip": "169.150.242.43"
+    "lat": 32.0958,
+    "lon": 34.9522,
+    "countryCode": "IL",
+    "country": "Israel",
+    "city": "Rosh Ha\u2018Ayin",
+    "domain": "r-yp.algorand-mainnet.network.",
+    "ip": "64.176.162.174"
   },
   {
-    "lat": 40.4406,
-    "lon": -79.9958,
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Toronto",
+    "domain": "r-ic.algorand-mainnet.network.",
+    "ip": "104.18.17.21"
+  },
+  {
+    "lat": 33.6446,
+    "lon": -111.895,
     "countryCode": "US",
     "country": "United States",
-    "city": "Pittsburgh",
-    "domain": "r-gd.algorand-mainnet.network.",
-    "ip": "204.16.244.240"
+    "city": "Scottsdale",
+    "domain": "r-n8.algorand-mainnet.network.",
+    "ip": "23.81.207.34"
+  },
+  {
+    "lat": 50.475,
+    "lon": 12.365,
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Falkenstein",
+    "domain": "r-u6.algorand-mainnet.network.",
+    "ip": "49.12.17.217"
+  },
+  {
+    "lat": 41.8904,
+    "lon": 12.5126,
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Rome",
+    "domain": "r-fe.algorand-mainnet.network.",
+    "ip": "151.100.174.50"
+  },
+  {
+    "lat": 50.0883,
+    "lon": 14.4124,
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Prague",
+    "domain": "r-oc.algorand-mainnet.network.",
+    "ip": "212.102.38.113"
+  },
+  {
+    "lat": 38.9609,
+    "lon": -77.3429,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Reston",
+    "domain": "r-l3.algorand-mainnet.network.",
+    "ip": "15.204.220.9"
+  },
+  {
+    "lat": 46.0316,
+    "lon": 8.92433,
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "city": "Manno",
+    "domain": "r-hg.algorand-mainnet.network.",
+    "ip": "195.176.181.144"
   },
   {
     "lat": 53.3498,
@@ -716,17 +140,62 @@
     "countryCode": "IE",
     "country": "Ireland",
     "city": "Dublin",
-    "domain": "r-ej.algorand-mainnet.network.",
-    "ip": "141.98.217.45"
+    "domain": "r-j5.algorand-mainnet.network.",
+    "ip": "141.98.217.221"
   },
   {
-    "lat": 43.4325,
-    "lon": -80.4995,
-    "countryCode": "CA",
-    "country": "Canada",
-    "city": "Kitchener",
-    "domain": "r-ge.algorand-mainnet.network.",
-    "ip": "129.97.74.19"
+    "lat": 33.7485,
+    "lon": -84.3871,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Atlanta",
+    "domain": "r-cj.algorand-mainnet.network.",
+    "ip": "64.74.160.106"
+  },
+  {
+    "lat": 1.352,
+    "lon": 103.8198,
+    "countryCode": "SG",
+    "country": "Singapore",
+    "city": "Singapore",
+    "domain": "r-zl.algorand-mainnet.network.",
+    "ip": "43.156.250.69"
+  },
+  {
+    "lat": 39.0019,
+    "lon": -77.4556,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Ashburn",
+    "domain": "r-ve.algorand-mainnet.network.",
+    "ip": "45.67.15.7"
+  },
+  {
+    "lat": 45.8293,
+    "lon": 15.9793,
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "domain": "r-kp.algorand-mainnet.network.",
+    "ip": "169.150.242.42"
+  },
+  {
+    "lat": 49.4521,
+    "lon": 11.0767,
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Nuremberg",
+    "domain": "r-ho.algorand-mainnet.network.",
+    "ip": "167.235.107.245"
+  },
+  {
+    "lat": 52.2296,
+    "lon": 21.0067,
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Warsaw",
+    "domain": "r-xh.algorand-mainnet.network.",
+    "ip": "84.17.55.173"
   },
   {
     "lat": 22.3193,
@@ -738,6 +207,240 @@
     "ip": "169.150.222.235"
   },
   {
+    "lat": 37.9842,
+    "lon": 23.7353,
+    "countryCode": "GR",
+    "country": "Greece",
+    "city": "Athens",
+    "domain": "r-l2.algorand-mainnet.network.",
+    "ip": "79.127.218.211"
+  },
+  {
+    "lat": 49.4423,
+    "lon": 11.0191,
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Nuremberg",
+    "domain": "r-xb.algorand-mainnet.network.",
+    "ip": "49.13.202.168"
+  },
+  {
+    "lat": 19.0748,
+    "lon": 72.8856,
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Mumbai",
+    "domain": "r-nb.algorand-mainnet.network.",
+    "ip": "172.105.44.124"
+  },
+  {
+    "lat": 60.1797,
+    "lon": 24.9344,
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Helsinki",
+    "domain": "r-b2.algorand-mainnet.network.",
+    "ip": "65.109.42.105"
+  },
+  {
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Toronto",
+    "domain": "r-z8.algorand-mainnet.network.",
+    "ip": "104.18.17.21"
+  },
+  {
+    "lat": -23.5312,
+    "lon": -46.7901,
+    "countryCode": "BR",
+    "country": "Brazil",
+    "city": "Osasco",
+    "domain": "r-kn.algorand-mainnet.network.",
+    "ip": "216.238.116.219"
+  },
+  {
+    "lat": -33.8979,
+    "lon": 151.1897,
+    "countryCode": "AU",
+    "country": "Australia",
+    "city": "Sydney",
+    "domain": "r-cb.algorand-mainnet.network.",
+    "ip": "103.217.254.19"
+  },
+  {
+    "lat": 22.3193,
+    "lon": 114.169,
+    "countryCode": "HK",
+    "country": "Hong Kong",
+    "city": "Hong Kong",
+    "domain": "r-bh.algorand-mainnet.network.",
+    "ip": "169.150.222.198"
+  },
+  {
+    "lat": 37.9675,
+    "lon": -122.2899,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "El Sobrante",
+    "domain": "r-rh.algorand-mainnet.network.",
+    "ip": "128.32.157.58"
+  },
+  {
+    "lat": 40.4163,
+    "lon": -3.6934,
+    "countryCode": "ES",
+    "country": "Spain",
+    "city": "Madrid",
+    "domain": "r-zw.algorand-mainnet.network.",
+    "ip": "185.140.208.170"
+  },
+  {
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Vancouver",
+    "domain": "r-iq.algorand-mainnet.network.",
+    "ip": "208.91.104.72"
+  },
+  {
+    "lat": 60.1719,
+    "lon": 24.9347,
+    "countryCode": "FI",
+    "country": "Finland",
+    "city": "Helsinki",
+    "domain": "r-er.algorand-mainnet.network.",
+    "ip": "95.217.168.85"
+  },
+  {
+    "lat": 45.8293,
+    "lon": 15.9793,
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "domain": "r-qq.algorand-mainnet.network.",
+    "ip": "169.150.242.44"
+  },
+  {
+    "lat": 45.8293,
+    "lon": 15.9793,
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "domain": "r-rz.algorand-mainnet.network.",
+    "ip": "169.150.242.43"
+  },
+  {
+    "lat": 43.4325,
+    "lon": -80.4995,
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Kitchener",
+    "domain": "r-ge.algorand-mainnet.network.",
+    "ip": "129.97.74.19"
+  },
+  {
+    "lat": 42.3592,
+    "lon": -71.0931,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Cambridge",
+    "domain": "r-au.algorand-mainnet.network.",
+    "ip": "128.31.0.83"
+  },
+  {
+    "lat": -26.2309,
+    "lon": 28.0583,
+    "countryCode": "ZA",
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "domain": "r-s2.algorand-mainnet.network.",
+    "ip": "169.150.246.89"
+  },
+  {
+    "lat": 1.352,
+    "lon": 103.8198,
+    "countryCode": "SG",
+    "country": "Singapore",
+    "city": "Singapore",
+    "domain": "r-r7.algorand-mainnet.network.",
+    "ip": "67.209.54.136"
+  },
+  {
+    "lat": 50.0883,
+    "lon": 14.4124,
+    "countryCode": "CZ",
+    "country": "Czechia",
+    "city": "Prague",
+    "domain": "r-oo.algorand-mainnet.network.",
+    "ip": "212.102.38.88"
+  },
+  {
+    "lat": 32.0958,
+    "lon": 34.9522,
+    "countryCode": "IL",
+    "country": "Israel",
+    "city": "Rosh Ha\u2018Ayin",
+    "domain": "r-om.algorand-mainnet.network.",
+    "ip": "64.176.168.249"
+  },
+  {
+    "lat": 40.4406,
+    "lon": -79.9958,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Pittsburgh",
+    "domain": "r-fj.algorand-mainnet.network.",
+    "ip": "204.16.244.199"
+  },
+  {
+    "lat": 40.0992,
+    "lon": -83.1141,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Dublin",
+    "domain": "r-c7.algorand-mainnet.network.",
+    "ip": "3.140.75.230"
+  },
+  {
+    "lat": 42.6951,
+    "lon": 23.325,
+    "countryCode": "BG",
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "domain": "r-wh.algorand-mainnet.network.",
+    "ip": "37.19.203.137"
+  },
+  {
+    "lat": 35.6893,
+    "lon": 139.6899,
+    "countryCode": "JP",
+    "country": "Japan",
+    "city": "Tokyo",
+    "domain": "r-me.algorand-mainnet.network.",
+    "ip": "109.61.83.164"
+  },
+  {
+    "lat": 33.7485,
+    "lon": -84.3871,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Atlanta",
+    "domain": "r-hr.algorand-mainnet.network.",
+    "ip": "195.181.171.207"
+  },
+  {
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "countryCode": "IE",
+    "country": "Ireland",
+    "city": "Dublin",
+    "domain": "r-ej.algorand-mainnet.network.",
+    "ip": "141.98.217.45"
+  },
+  {
     "lat": 40.4406,
     "lon": -79.9958,
     "countryCode": "US",
@@ -745,5 +448,302 @@
     "city": "Pittsburgh",
     "domain": "r-bk.algorand-mainnet.network.",
     "ip": "141.98.219.156"
+  },
+  {
+    "lat": 34.0522,
+    "lon": -118.2436,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Los Angeles",
+    "domain": "r-kl.algorand-mainnet.network.",
+    "ip": "74.118.142.70"
+  },
+  {
+    "lat": 42.0172,
+    "lon": -87.8691,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Des Plaines",
+    "domain": "r-h7.algorand-mainnet.network.",
+    "ip": "69.65.31.5"
+  },
+  {
+    "lat": 4.6115,
+    "lon": -74.0833,
+    "countryCode": "CO",
+    "country": "Colombia",
+    "city": "Bogot\u00e1",
+    "domain": "r-k7.algorand-mainnet.network.",
+    "ip": "169.150.228.12"
+  },
+  {
+    "lat": 6.4474,
+    "lon": 3.3903,
+    "countryCode": "NG",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "domain": "r-gw.algorand-mainnet.network.",
+    "ip": "185.147.53.2"
+  },
+  {
+    "lat": 39.0469,
+    "lon": -77.4903,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Ashburn",
+    "domain": "r-v8.algorand-mainnet.network.",
+    "ip": "121.127.42.103"
+  },
+  {
+    "lat": 42.6951,
+    "lon": 23.325,
+    "countryCode": "BG",
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "domain": "r-ny.algorand-mainnet.network.",
+    "ip": "37.19.203.138"
+  },
+  {
+    "lat": 50.458,
+    "lon": 30.5303,
+    "countryCode": "UA",
+    "country": "Ukraine",
+    "city": "Kyiv",
+    "domain": "r-cf.algorand-mainnet.network.",
+    "ip": "195.12.59.106"
+  },
+  {
+    "lat": 40.4406,
+    "lon": -79.9958,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Pittsburgh",
+    "domain": "r-gd.algorand-mainnet.network.",
+    "ip": "204.16.244.240"
+  },
+  {
+    "lat": 20.5762,
+    "lon": -100.2951,
+    "countryCode": "MX",
+    "country": "Mexico",
+    "city": "Quer\u00e9taro City",
+    "domain": "r-c4.algorand-mainnet.network.",
+    "ip": "216.238.85.142"
+  },
+  {
+    "lat": 40.4406,
+    "lon": -79.9958,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Pittsburgh",
+    "domain": "r-g5.algorand-mainnet.network.",
+    "ip": "204.16.241.153"
+  },
+  {
+    "lat": 52.3675,
+    "lon": 4.9041,
+    "countryCode": "NL",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "domain": "r-nh.algorand-mainnet.network.",
+    "ip": "74.118.140.108"
+  },
+  {
+    "lat": 40.7667,
+    "lon": 14.79,
+    "countryCode": "IT",
+    "country": "Italy",
+    "city": "Fisciano",
+    "domain": "r-pb.algorand-mainnet.network.",
+    "ip": "193.205.184.250"
+  },
+  {
+    "lat": 49.4521,
+    "lon": 11.0767,
+    "countryCode": "DE",
+    "country": "Germany",
+    "city": "Nuremberg",
+    "domain": "r-pn.algorand-mainnet.network.",
+    "ip": "167.235.65.180"
+  },
+  {
+    "lat": 32.7908,
+    "lon": -96.8336,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Dallas",
+    "domain": "r-s0.algorand-mainnet.network.",
+    "ip": "64.94.95.234"
+  },
+  {
+    "lat": 45.8293,
+    "lon": 15.9793,
+    "countryCode": "HR",
+    "country": "Croatia",
+    "city": "Zagreb",
+    "domain": "r-ui.algorand-mainnet.network.",
+    "ip": "169.150.242.41"
+  },
+  {
+    "lat": 40.9076,
+    "lon": -73.122,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Stony Brook",
+    "domain": "r-kr.algorand-mainnet.network.",
+    "ip": "130.245.173.83"
+  },
+  {
+    "lat": 28.6139,
+    "lon": 77.209,
+    "countryCode": "IN",
+    "country": "India",
+    "city": "New Delhi",
+    "domain": "r-cw.algorand-mainnet.network.",
+    "ip": "185.100.212.60"
+  },
+  {
+    "lat": 54.7476,
+    "lon": 25.5025,
+    "countryCode": "LT",
+    "country": "Lithuania",
+    "city": "Vilnius",
+    "domain": "r-hd.algorand-mainnet.network.",
+    "ip": "195.238.127.42"
+  },
+  {
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Vancouver",
+    "domain": "r-g9.algorand-mainnet.network.",
+    "ip": "208.91.104.71"
+  },
+  {
+    "lat": 32.0929,
+    "lon": 34.8072,
+    "countryCode": "IL",
+    "country": "Israel",
+    "city": "Ramat Gan",
+    "domain": "r-tc.algorand-mainnet.network.",
+    "ip": "132.67.252.201"
+  },
+  {
+    "lat": 45.5075,
+    "lon": -73.5887,
+    "countryCode": "CA",
+    "country": "Canada",
+    "city": "Montreal",
+    "domain": "r-u4.algorand-mainnet.network.",
+    "ip": "172.96.167.154"
+  },
+  {
+    "lat": 37.3882,
+    "lon": -121.888,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "San Jose",
+    "domain": "r-ju.algorand-mainnet.network.",
+    "ip": "209.58.138.231"
+  },
+  {
+    "lat": 39.0469,
+    "lon": -77.4903,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Ashburn",
+    "domain": "r-np.algorand-mainnet.network.",
+    "ip": "121.127.42.101"
+  },
+  {
+    "lat": 40.7123,
+    "lon": -74.0068,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "New York",
+    "domain": "r-oi.algorand-mainnet.network.",
+    "ip": "108.62.50.80"
+  },
+  {
+    "lat": 40.5118,
+    "lon": -111.475,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Midway",
+    "domain": "r-v4.algorand-mainnet.network.",
+    "ip": "69.160.65.233"
+  },
+  {
+    "lat": 19.0748,
+    "lon": 72.8856,
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Mumbai",
+    "domain": "r-c3.algorand-mainnet.network.",
+    "ip": "172.105.46.167"
+  },
+  {
+    "lat": 52.2296,
+    "lon": 21.0067,
+    "countryCode": "PL",
+    "country": "Poland",
+    "city": "Warsaw",
+    "domain": "r-m1.algorand-mainnet.network.",
+    "ip": "84.17.55.172"
+  },
+  {
+    "lat": 1.27989,
+    "lon": 103.849,
+    "countryCode": "SG",
+    "country": "Singapore",
+    "city": "Singapore",
+    "domain": "r-wb.algorand-mainnet.network.",
+    "ip": "15.235.214.19"
+  },
+  {
+    "lat": 34.0515,
+    "lon": -118.2707,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Los Angeles",
+    "domain": "r-xz.algorand-mainnet.network.",
+    "ip": "2.56.166.61"
+  },
+  {
+    "lat": 25.8119,
+    "lon": -80.2318,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Miami",
+    "domain": "r-vi.algorand-mainnet.network.",
+    "ip": "172.96.172.36"
+  },
+  {
+    "lat": 34.0522,
+    "lon": -118.2436,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Los Angeles",
+    "domain": "r-pi.algorand-mainnet.network.",
+    "ip": "74.118.142.72"
+  },
+  {
+    "lat": 33.6446,
+    "lon": -111.895,
+    "countryCode": "US",
+    "country": "United States",
+    "city": "Scottsdale",
+    "domain": "r-ol.algorand-mainnet.network.",
+    "ip": "23.81.207.33"
+  },
+  {
+    "lat": 19.0748,
+    "lon": 72.8856,
+    "countryCode": "IN",
+    "country": "India",
+    "city": "Mumbai",
+    "domain": "r-k6.algorand-mainnet.network.",
+    "ip": "172.105.45.161"
   }
 ]
