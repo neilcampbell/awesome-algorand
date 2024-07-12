@@ -18,7 +18,7 @@ Refer [here](https://ask.awesomealgo.com) to ask or vote for questions to guests
 
 ---
 
-The AwesomeAlgo Podcast is a monthly podcast where we discuss the latest news and developments in the Algorand ecosystem. Anyone, upon review, can be a guest of the show by contributing a PR to the [repository](https://github.com/aorumbayev/awesome-algorand) and filling the [guest form](https://2c5n1ed3kz6.typeform.com/to/pAP5oPFx).
+The AwesomeAlgo Podcast is a monthly podcast where we discuss the latest news and developments in the Algorand ecosystem. Anyone, upon review, can be a guest of the show by contributing a PR to the [repository](https://github.com/awesome-algorand/awesome-algorand) and filling the [guest form](https://2c5n1ed3kz6.typeform.com/to/pAP5oPFx).
 
 ---
 
