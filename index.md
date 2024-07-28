@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/awesome-algorand/awesome-algorand"><img src="https://ipfs.algonode.xyz/ipfs/bafybeiao46v3tfqzphbd7f4jmqgadqhlb5xvqe7zwsntsiei6brmnc3wim"></a>
+<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://ipfs.algonode.xyz/ipfs/bafybeiao46v3tfqzphbd7f4jmqgadqhlb5xvqe7zwsntsiei6brmnc3wim"></a>
 </div>
 <br/>
 <div align="center">
@@ -12,17 +12,17 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 <p align="center">
     <img  src="https://api.visitorbadge.io/api/visitors?path=aorumbayev%2Fawesome-algorand&countColor=%23000000&style=flat" />
     <a target="_blank" href="https://awesomealgo.com"><img src="https://img.shields.io/badge/url-website-black.svg" /></a>
-    <a target="_blank" href="https://github.com/awesome-algorand/awesome-algorand"><img src="https://img.shields.io/badge/url-repository-black.svg" /></a>
+    <a target="_blank" href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/badge/url-repository-black.svg" /></a>
     <br />
     <a target="_blank" href="https://rss.com/podcasts/the-awesomealgo-podcast"><img src="https://img.shields.io/badge/podcast-rss-black.svg?color=gold" /></a>
     <a target="_blank" href="https://developer.algorand.org"><img src="https://img.shields.io/coincap/price-usd/algorand?color=teal" /></a>
-    <a target="_blank" href="https://github.com/awesome-algorand/awesome-algorand"><img src="https://img.shields.io/github/stars/awesome-algorand/awesome-algorand?color=teal" /></a>
-    <a target="_blank" href="https://github.com/awesome-algorand/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/awesome-algorand/awesome-algorand?color=gold" /></a>
+    <a target="_blank" href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?color=teal" /></a>
+    <a target="_blank" href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?color=gold" /></a>
 </p>
 
 🤖 You can enhance your experience by interacting with the AI chat bot available at [AwesomeAlgo Search](https://chat.awesomealgo.com/). It's designed to answer any questions you might have regarding resources in this repository and readme 😊.
 
-> **Additionally**, enhance your accessibility with the AwesomeAlgo Search desktop version, which can be downloaded [here](https://github.com/awesome-algorand/awesome-algorand/releases/tag/v0.1.0).
+> **Additionally**, enhance your accessibility with the AwesomeAlgo Search desktop version, which can be downloaded [here](https://github.com/aorumbayev/awesome-algorand/releases/tag/v0.1.0).
 
 ## Contents
 
@@ -430,13 +430,13 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ## Contributing
 
-Contributions welcome! Read the [contribution guidelines](https://github.com/awesome-algorand/Awesome-Algorand/blob/main/contributing.md) first.
+Contributions welcome! Read the [contribution guidelines](https://github.com/aorumbayev/Awesome-Algorand/blob/main/contributing.md) first.
 
 Special thanks to everyone who forked or starred the repository ❤️
 
-[![Stargazers repo roster for @awesome-algorand/Awesome-Algorand](https://reporoster.com/stars/dark/awesome-algorand/Awesome-Algorand)](https://github.com/awesome-algorand/Awesome-Algorand/stargazers)
+[![Stargazers repo roster for @aorumbayev/Awesome-Algorand](https://reporoster.com/stars/dark/aorumbayev/Awesome-Algorand)](https://github.com/aorumbayev/Awesome-Algorand/stargazers)
 
-[![Forkers repo roster for @awesome-algorand/AwesomeAlgorand](https://reporoster.com/forks/dark/awesome-algorand/Awesome-Algorand)](https://github.com/awesome-algorand/Awesome-Algorand/network/members)
+[![Forkers repo roster for @aorumbayev/AwesomeAlgorand](https://reporoster.com/forks/dark/aorumbayev/Awesome-Algorand)](https://github.com/aorumbayev/Awesome-Algorand/network/members)
 
 ---
 
@@ -446,4 +446,4 @@ License
 
 To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand.`
 
-For the full license, see [LICENSE](https://github.com/awesome-algorand/Awesome-Algorand/blob/main/LICENSE.md).
+For the full license, see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE.md).
