@@ -1,7 +1,7 @@
 # AwesomeAlgo Podcast
 
 <div align="center">
-<a href="https://rss.com/podcasts/the-awesomealgo-podcast"><img src="https://ipfs.algonode.xyz/ipfs/bafybeiao46v3tfqzphbd7f4jmqgadqhlb5xvqe7zwsntsiei6brmnc3wim"></a>
+<a href="https://rss.com/podcasts/the-awesomealgo-podcast"><img src="https://ipfs.algonode.xyz/ipfs/QmZc8SDRWsikyfQSfw8BksepYv9F1JN4cEjvYPJDSa1BtK"></a>
 </div>
 <br/>
 
